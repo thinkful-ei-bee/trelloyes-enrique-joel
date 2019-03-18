@@ -16,7 +16,7 @@ class App extends Component {
 
         <div className="App-list">
         {/* section components */}
-        {List};
+        {/* {List(STORE)}; */}
         </div>
       </main>
     )
