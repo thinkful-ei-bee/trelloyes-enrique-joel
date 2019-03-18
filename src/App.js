@@ -1,26 +1,23 @@
-import React, { Component } from 'react';
-import STORE from './store/store';
-import List from './applist';
+import React from 'react';
+import AppList from './applist';
 
-console.log(STORE);
+function App(){
 
-class App extends Component {
+  return (
+    <main className="App">
 
-  render() {
-    return (
-      <main className="App">
+      <header className="App-header">
+        <h1>Trelloyes!</h1>
+      </header>
 
-        <header className="App-header">
-          <h1>Trelloyes!</h1>
-        </header>
-
-        <div className="App-list">
-        {/* section components */}
-        {/* {List(STORE)}; */}
-        </div>
-      </main>
-    )
-  }
+     
+      
+      <AppList></AppList>
+    
+      
+    </main>
+  )
+  
 }
 
 export default App;

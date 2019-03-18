@@ -1,26 +1,25 @@
-import React, { Component } from 'react';
-import List from './list';
+import React from 'react';
+import STORE from './store/store';
+import Card from './card';
 
+console.log(STORE);
 
-console.log(List)
-
-
-class AppList extends Component{
-  
-
-  // const appListItems = props.AppList.map((list, index) => ({List}));
-  
-  render() {
+function AppList() {
     
-    return(
-      <section className="List">
-        <header className="List-header">
-          <h2>First list</h2>
-        </header>
-       
-      </section>
-    )
-  }
+  const lists = STORE.lists.map((list) => (
+    <section className="List" key={list.id}>
+    <header className="List-header">
+      {list.header}
+    </header>
+      <Card cardIds={list.cardIds}></Card>
+    </section>
+  ));
+
+  return(
+    <div className="App-list">
+      {lists}
+    </div>
+  );
   
 }
 
