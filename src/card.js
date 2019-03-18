@@ -1,5 +1,3 @@
-'use-strict';
-
 import React from 'react';
 
 const Card = (props) => {
@@ -10,5 +8,7 @@ const Card = (props) => {
       <p>prop.description</p>
     </div>
   )
-  
+
 }
+
+export default Card;

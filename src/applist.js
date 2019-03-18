@@ -1,21 +1,21 @@
-'use-strict';
-
 import React from 'react';
-import List from './components/app-list';
+import List from './list';
 
-const AppList = (props) => {
+class AppList extends React.Component{
   
   const appListItems = props.AppList.map((list, index) => ({List}));
-
-  return(
-    <div className="App-list">
+  
+  render() {
+    return(
       <section className="List">
         <header className="List-header">
           <h2>First list</h2>
         </header>
-        appListItems
+        {/* {appListItems} */}
       </section>
-    </div>
-  );
+    )
+  }
   
 }
+
+export default AppList;

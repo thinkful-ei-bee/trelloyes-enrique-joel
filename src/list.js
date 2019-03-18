@@ -1,7 +1,5 @@
-'use-strict';
-
 import React from 'react';
-import Card from './components/card';
+import Card from './card';
 
 const List = (props) => {
 
@@ -11,6 +9,9 @@ const List = (props) => {
     <div className="List-cards">
       {listItems}
     </div>
-  );
+  )
   
 }
+
+export default List;
+
