@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Card {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.App-list {
+  border-width: 5px 0 0 0;
+  border-style: solid;
+  border-color: black;
+}
+
+.List-cards {
+  border-width: 0 0 5px 0;
+  border-style: solid;
+  border-color: black;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = (props) => {
-  console.log(props);
+  //console.log(props);
   
   const cards = props.cardIds.map((card, index) => (
     <div className="Card" key={index}>
