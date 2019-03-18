@@ -1,14 +1,12 @@
 import React from 'react';
-import STORE from './store/store';
-
 
 const Card = (props) => {
-  //console.log(props.cardIds);
+  console.log(props);
   
   const cards = props.cardIds.map((card, index) => (
     <div className="Card" key={index}>
-      <h3>{STORE.allCards[card].title}</h3>
-      <p>{STORE.allCards[card].content}</p>
+      <h3>{props.allCards[card].title}</h3>
+      <p>{props.allCards[card].content}</p>
     </div>
   ));
 

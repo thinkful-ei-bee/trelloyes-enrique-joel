@@ -1,5 +1,6 @@
 import React from 'react';
 import AppList from './applist';
+import STORE from './store/store';
 
 function App(){
 
@@ -10,10 +11,7 @@ function App(){
         <h1>Trelloyes!</h1>
       </header>
 
-     
-      
-      <AppList></AppList>
-    
+      <AppList store={STORE}></AppList>    
       
     </main>
   )
